@@ -1,9 +1,8 @@
-import { Button } from "../components/ui/button";
+"use client";
+import { useQuery } from "convex/react";
+import { api } from "../../convex/_generated/api";
 
 export default function Home() {
-  return (
-    <div>
-      <Button>Click me</Button>
-    </div>
-  );
+  const projects = useQuery(api.projects.get);
+  return <div>{JSON.stringify(projects)}</div>;
 }
