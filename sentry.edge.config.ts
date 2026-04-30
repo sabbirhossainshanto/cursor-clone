@@ -17,8 +17,8 @@ Sentry.init({
   // Enable sending user PII (Personally Identifiable Information)
   // https://docs.sentry.io/platforms/javascript/guides/nextjs/configuration/options/#sendDefaultPii
   sendDefaultPii: true,
-  integrations: [
-    Sentry.googleGenAIIntegration,
-    Sentry.consoleLoggingIntegration({ levels: ["log", "warn", "error"] }),
-  ],
+  // integrations: [
+  //   Sentry.googleGenAIIntegration,
+  //   Sentry.consoleLoggingIntegration({ levels: ["log", "warn", "error"] }),
+  // ],
 });
